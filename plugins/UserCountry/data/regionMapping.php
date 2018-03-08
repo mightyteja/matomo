@@ -1829,6 +1829,14 @@ return [
         '28' => '18',
         '29' => '2',
         '30' => '24',
+
+        // invalid codes still included in maxminds codes
+        // mapped based on the names
+        '01' => '2', // Batdambang
+        '06' => '7', // Kampot
+        '11' => '12', // Phnum Penh
+        '15' => '16', // Ratanakiri Kiri
+        '16' => '17', // Siem Reap
     ],
     'KI' => [
         '01' => 'G',
@@ -1856,7 +1864,20 @@ return [
         '15' => '15',
     ],
     'KP' => [
-        '01' => '04',
+        // mapping based on names an wikipedia pages
+        '01' => '04', // Chagang-do
+        '03' => '08', // Hamgyong-namdo
+        '06' => '05', // Hwanghae-namdo
+        '07' => '09', // Hwanghae-bukto
+        '08' => '06', // Kaesong-si
+        '09' => '07', // Kangwon-do
+        '11' => '09', // P'yongan-bukto
+        '12' => '01', // P'yongyang-si
+        '13' => '10', // Yanggang-do
+        '14' => '14', // Namp'o-si
+        '15' => '02', // P'yongan-namdo
+        '17' => '09', // Hamgyong-bukto
+        '18' => '13', // Najin Sonbong-si
     ],
     'KR' => [
         '01' => '49',
@@ -1877,11 +1898,23 @@ return [
         '21' => '31',
     ],
     'KW' => [
+        '01' => 'AH',
         '02' => 'KU',
         '05' => 'JA',
         '07' => 'FA',
         '08' => 'HA',
         '09' => 'MU',
+    ],
+    'KY' => [
+        // Cayman Islands do not have an ISO regions
+        '01' => '',
+        '02' => '',
+        '03' => '',
+        '04' => '',
+        '05' => '',
+        '06' => '',
+        '07' => '',
+        '08' => '',
     ],
     'KZ' => [
         '01' => 'ALM',
@@ -1910,14 +1943,41 @@ return [
         '13' => 'XA',
         '14' => 'XI',
         '17' => 'LP',
+
+        // valid codes, not listed by maxmind
+        '18' => 'PH', // Phôngsali Province
+        '19' => 'SL', // Salavan Province
+        '20' => 'SV', // Savannakhét Province
+        '22' => 'BK', // Bokèo Province
+        '23' => 'BL', // Bolikhamxai Province
+        '24' => 'VI', // Viangchan Municipality
+        '25' => 'XS', // Xaisômboun Special Zone
+        '26' => 'XE', // Xékong Province
+        '27' => 'VI', // Vientiane Province
+
+        // invalid codes listed by maxmind
+        // mapeed based on the names
+        '04' => 'KH', //Khammouan
+        '05' => 'LM', //Louang Namtha
+        '08' => 'PH', //Phongsali
+        '09' => 'SL', //Saravan
+        '10' => 'SV', //Savannakhet
+        '11' => 'VI', //Vientiane
     ],
     'LB' => [
         '04' => 'BA',
         '05' => 'JL',
         '06' => 'JA',
+        '07' => 'NA',
+        '08' => 'BI',
         '09' => 'AS',
         '10' => 'AK',
         '11' => 'BH',
+
+        // invalid codes listed by maxmind
+        '01' => 'BI', // Beqaa
+        '02' => 'JA', // Al Janub
+        '03' => 'AS', // Liban-Nord
     ],
     'LC' => [
         '01' => '01',
@@ -1942,6 +2002,49 @@ return [
         '09' => '09',
         '10' => '10',
         '11' => '11',
+
+        // codes screwed up by maxmind
+        // Based on the names they seem to be from Liberia, so remove them
+        '21' => '', // Gbarpolu
+        '22' => '', // River Gee
+    ],
+    'LK' => [
+        // valid FIPS codes  [not used by maxmind]
+        '01' => '52', // Amparai District
+        '02' => '71', // Anuradhapura District
+        '03' => '81', // Badulla District
+        '04' => '51', // Batticaloa District
+        '06' => '31', // Galle District
+        '07' => '33', // Hambantota District
+        '09' => '13', // Kalutara District
+        '10' => '21', // Kandy District
+        '11' => '92', // Kegalla District
+        '12' => '61', // Kurunegala District
+        '14' => '22', // Matale District
+        '15' => '32', // Matara District
+        '16' => '82', // Moneragala District
+        '17' => '23', // Nuwara Eliya District
+        '18' => '72', // Polonnaruwa District
+        '19' => '62', // Puttalam District
+        '20' => '91', // Ratnapura District
+        '21' => '53', // Trincomalee District
+        '23' => '11', // Colombo District
+        '24' => '12', // Gampaha District
+        '25' => '41', // Jaffna District
+        '26' => '43', // Mannar District
+        '27' => '45', // Mullaittivu District
+        '28' => '44', // Vavuniya District
+
+        // invalid codes [use by maxmind]
+        '29' => '2', // Central
+        '30' => '7', // North Central
+        '32' => '6', // North Western
+        '33' => '9', // Sabaragamuwa
+        '34' => '3', // Southern
+        '35' => '8', // Uva
+        '36' => '1', // Western
+        '37' => '5', // Eastern
+        '38' => '4', // Northern
     ],
     'LR' => [
         '01' => 'BG',
@@ -1949,6 +2052,7 @@ return [
         '10' => 'SI',
         '11' => 'GB',
         '12' => 'CM',
+        '13' => 'MY',
         '14' => 'MO',
         '17' => 'MG',
         '18' => 'RI',
@@ -1956,6 +2060,16 @@ return [
         '20' => 'LO',
         '21' => 'GP',
         '22' => 'RG',
+
+        // valid codes  [not used by maxmind]
+        '15' => 'BM',
+        '16' => 'GK',
+
+        // invalid codes  [used by maxmind]
+        '04' => 'CM', // Grand Cape Mount
+        '05' => 'LO', // Lofa
+        '06' => 'MY', // Maryland
+        '07' => 'MO', // Monrovia  [capital city in region Montserrado]
     ],
     'LS' => [
         '10' => 'D',
@@ -1982,28 +2096,67 @@ return [
         '03' => 'L',
     ],
     'LV' => [
-        '06' => 'DGV',
-        '11' => 'JEL',
-        '13' => 'JUR',
-        '16' => 'LPX',
-        '23' => 'REZ',
-        '25' => 'RIX',
-        '32' => 'VEN',
+        // mapping based on the names on wikipedia
+        '01' => '002', // Aizkraukles
+        '02' => '007', // Aluksnes
+        '03' => '015', // Balvu
+        '04' => '016', // Bauskas
+        '05' => '022', // Cesu
+        '06' => 'DGV', // Daugavpils
+        '07' => '025', // Daugavpils
+        '08' => '026', // Dobeles
+        '09' => '033', // Gulbenes
+        '10' => '042', // Jekabpils
+        '11' => 'JEL', // Jelgava
+        '12' => '041', // Jelgavas
+        '13' => 'JUR', // Jurmala
+        '14' => '047', // Kraslavas
+        '15' => '050', // Kuldigas
+        '16' => 'LPX', // Liepaja
+        '17' => '', // Liepajas [splitted in 2009 and not mappable]
+        '18' => '054', // Limbazu
+        '19' => '058', // Ludzas
+        '20' => '059', // Madonas
+        '21' => '067', // Ogres
+        '22' => '073', // Preilu
+        '23' => 'REZ', // Rezekne
+        '24' => '077', // Rezeknes
+        '25' => 'RIX', // Riga
+        '26' => '', // Rigas  [splitted in 2009 and not mappable]
+        '27' => '088', // Saldus
+        '28' => '097', // Talsu
+        '29' => '099', // Tukuma
+        '30' => '101', // Valkas
+        '31' => 'VMR', // Valmieras
+        '32' => 'VEN', // Ventspils
+        '33' => '106', // Ventspils
     ],
     'LY' => [
-        '05' => 'JU',
-        '08' => 'KF',
-        '13' => 'WS',
-        '30' => 'MQ',
-        '34' => 'SB',
-        '42' => 'BU',
-        '51' => 'NQ',
-        '53' => 'ZA',
-        '54' => 'BA',
-        '55' => 'DR',
-        '58' => 'MI',
-        '60' => 'SR',
-        '61' => 'TB',
+        '03' => 'JI', // Al Aziziyah  [part of Jafara since 2009]
+        '05' => 'JU', // Al Jufrah
+        '08' => 'KF', // Al Kufrah
+        '13' => 'WS', // Ash Shati'
+        '30' => 'MQ', // Murzuq
+        '34' => 'SB', // Sabha
+        '41' => 'MQ', // Tarhunah  [occupied by Tarhuna wa Msalata and transformed to Murqub in 2009]
+        '42' => 'BU', // Tubruq
+        '45' => 'MI', // Zlitan  [part of Misrata since 2009]
+        '47' => 'WA', // Ajdabiya  [included in Al Wāḩāt since 2007]
+        '48' => 'MJ', // Al Fatih  [some parts are in Marj]
+        '49' => 'JA', // Al Jabal al Akhdar
+        '50' => 'MB', // Al Khums  [seems to be part of Al Marqab]
+        '51' => 'NQ', // An Nuqat al Khams
+        '52' => 'WB', // Awbari  [part of Wadi al Hayaa]
+        '53' => 'ZA', // Az Zawiyah
+        '54' => 'BA', // Banghazi
+        '55' => 'DR', // Darnah
+        '56' => 'NL', // Ghadamis  [part of Nalut]
+        '57' => 'JG', // Gharyan  [part of Jabal al Gharbi  since 2007]
+        '58' => 'MI', // Misratah
+        '59' => '', // Sawfajjin   [split between Sirte and Misrata]
+        '60' => 'SR', // Surt
+        '61' => 'TB', // Tarabulus
+        '62' => '', // Yafran  [split between Jabal al Gharbi and Nalut]
     ],
     'MA' => [
         '45' => '08',
